@@ -206,17 +206,18 @@ Then it uses Gemini only for natural-language question answering.
 This makes the system more explainable because answers are based on extracted structural evidence.
 
 ### Tech Stack 
- Layer                 Technology Used             
- --------------------  --------------------------- 
- Programming Language  Python                      
- Code Parsing          Python AST                  
- Graph Analysis        NetworkX                    
- Visualization         Plotly                      
- UI Dashboard          Streamlit                   
- NLP / Reasoning       Rule-based NLP + Gemini API 
- LLM Integration       Google Gemini API           
- Metrics               Custom Python algorithms    
- Version Control       Git + GitHub                
+|Layer                | Technology Used             |
+| -------------------- | --------------------------- |
+| Programming Language | Python                      |
+| Code Parsing         | Python AST                  |
+| Graph Analysis       | NetworkX                    |
+| Visualization        | Plotly                      |
+| UI Dashboard         | Streamlit                   |
+| NLP / Reasoning      | Rule-based NLP + Gemini API |
+| LLM Integration      | Google Gemini API           |
+| Metrics              | Custom Python algorithms    |
+| Version Control      | Git + GitHub                |
+              
 
 ### Project Structure 
 code-cognitive-system/
