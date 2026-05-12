@@ -87,6 +87,7 @@ Measures how well the code is divided into independent and meaningful components
 Risk Score
 Identifies functions that may affect multiple parts of the code if changed incorrectly.
 
+
 ### 5. Code Intent Understanding
 
 The system detects the high-level purpose of the uploaded code.
@@ -104,6 +105,7 @@ General utility program
 
 This is done using function names, imports, dependency flow, and structural patterns.
 
+
 ### 6. Cognitive Summary
 
 The Cognitive Summary combines structural and semantic insights into one readable explanation.
@@ -120,6 +122,7 @@ Overall code behavior
 
 This avoids repeated summaries and gives one consolidated explanation.
 
+
 ### 7. Graph-Based Reasoning
 
 The system performs reasoning over the dependency graph.
@@ -133,6 +136,7 @@ Central functions
 Isolated utilities
 
 This makes the project more than just visualization. It reasons about the role of each function in the system.
+
 
 ### 8. Failure Simulation
 
@@ -155,6 +159,7 @@ login() → build_session() → get_dashboard() → get_permissions()
 
 This helps identify high-impact functions that require careful testing or refactoring.
 
+
 ### 9. Code Comparison
 
 The system allows users to upload two Python files and compare them side by side.
@@ -170,6 +175,7 @@ Monolithic function risk
 Final design quality 
 
 This helps determine whihc implementation is better designed.
+
 
 ### 10. Gemini-Powered Ask Questions Module
 
@@ -188,6 +194,7 @@ The system uses Google Gemini API to answer questions using the analyzed code co
 
 If Gemini API is not configured, the system safely falls back to local reasoning.
 
+
 ### Why This Project Is Different From a Normal LLM
 
 A general LLM reads code mostly as text.
@@ -205,6 +212,7 @@ Then it uses Gemini only for natural-language question answering.
 
 This makes the system more explainable because answers are based on extracted structural evidence.
 
+
 ### Tech Stack 
 |Layer                | Technology Used             |
 | -------------------- | --------------------------- |
@@ -218,6 +226,7 @@ This makes the system more explainable because answers are based on extracted st
 | Metrics              | Custom Python algorithms    |
 | Version Control      | Git + GitHub                |
               
+
 
 ### Project Structure 
 code-cognitive-system/
@@ -237,6 +246,8 @@ code-cognitive-system/
     ├── cognitive.py
     ├── summary_module.py
     └── llm_module.py
+
+    
 
 ### Installation and Set up 
 1. Clone the Repository
@@ -270,6 +281,7 @@ streamlit run app.py
 
 If Streamlit is not recognized:
 python -m streamlit run app.py
+
 
 ### How to Use 
 --Single File Analysis
@@ -315,6 +327,7 @@ Main Workflow: login → build_session → get_dashboard → get_permissions
 Central Function: login
 Failure-sensitive Function: hash_password
 
+
 ### Testing 
 The project can be tested using different types of Python programs:
 
@@ -330,6 +343,8 @@ Clean modular code
 Async notification system
 
 This helps evaluate whether the system can handle diverse code structures.
+
+
 
 ### Important Concepts Used
 AST Parsing
@@ -350,11 +365,15 @@ Failure simulation estimates the downstream impact of a function failure.
 Cognitive Reasoning 
 Cognitive reasoning identifies important functions, critical paths, bottlenecks and failure-sensitive components.
 
+
+
 ### Current Limitations
 The system currently focuses mainly on Python files.
 It uses static analysis and does not execute the uploaded code.
 Runtime behavior, dynamic imports, decorators, and advanced object-oriented flows may not always be fully captured.
 Gemini answers depend on API availability and the provided context.
+
+
 
 ### Future Scope
 
@@ -368,6 +387,8 @@ Support for Java, C++, and JavaScript
 More detailed LLM-assisted code review
 Exportable reports in PDF/HTML
 Integration with VS Code extensions
+
+
 
 ### Safety and API Key Handling
 
