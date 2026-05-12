@@ -71,7 +71,7 @@ Internal functions
 External/library calls
 Isolated functions
 
-4. Metrics Analysis
+### 4. Metrics Analysis
 
 The system calculates important code metrics such as:
 
@@ -87,7 +87,7 @@ Measures how well the code is divided into independent and meaningful components
 Risk Score
 Identifies functions that may affect multiple parts of the code if changed incorrectly.
 
-5. Code Intent Understanding
+### 5. Code Intent Understanding
 
 The system detects the high-level purpose of the uploaded code.
 
@@ -104,7 +104,7 @@ General utility program
 
 This is done using function names, imports, dependency flow, and structural patterns.
 
-6. Cognitive Summary
+### 6. Cognitive Summary
 
 The Cognitive Summary combines structural and semantic insights into one readable explanation.
 
@@ -120,7 +120,7 @@ Overall code behavior
 
 This avoids repeated summaries and gives one consolidated explanation.
 
-7. Graph-Based Reasoning
+### 7. Graph-Based Reasoning
 
 The system performs reasoning over the dependency graph.
 
@@ -134,7 +134,7 @@ Isolated utilities
 
 This makes the project more than just visualization. It reasons about the role of each function in the system.
 
-8. Failure Simulation
+### 8. Failure Simulation
 
 Failure Simulation shows what happens if a selected function fails or is incorrectly modified.
 
@@ -155,7 +155,7 @@ login() → build_session() → get_dashboard() → get_permissions()
 
 This helps identify high-impact functions that require careful testing or refactoring.
 
-9. Code Comparison
+### 9. Code Comparison
 
 The system allows users to upload two Python files and compare them side by side.
 
@@ -171,7 +171,7 @@ Final design quality
 
 This helps determine whihc implementation is better designed.
 
-10. Gemini-Powered Ask Questions Module
+### 10. Gemini-Powered Ask Questions Module
 
 The Ask Questions module allows users to ask natural language questions about the uploaded code.
 
